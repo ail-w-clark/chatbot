@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>*</pattern>
+        <template>Let's stay on topic. Type 'hi' to start over.</template>
+    </category>
+  
+    <category>
+        <pattern>HI</pattern>
+        <template>
+        Hello! This is Ailene. Congrats on almost graduating. I'm going
+        to ask you some questions to help you get a little clarity for your future
+        job search. <br/>Do you prefer to work alone or with people?
+        <button>
+            <text>Alone</text>
+            <postback>ALONE</postback>
+        </button>
+        <button>
+            <text>With People</text>
+            <postback>WITH PEOPLE</postback>
+        </button>
+        </template>
+        </category>
+  
+    <category>
+        <pattern>ALONE</pattern>
+        <template>Are you better at solving problems or statistics? Click one of the options below:
+        <button>
+            <text>Problem Solving</text>
+            <postback>PROBLEM SOLVING</postback>
+        </button>
+        <button>
+            <text>Statistics</text>
+            <postback>STATISTICS</postback>
+        </button>
+        </template>
+    </category>
+  
+    <category>
+        <pattern>WITH PEOPLE</pattern>
+        <template>Which best describes you? Click one of the options below:
+        <button>
+            <text>Creative</text>
+            <postback>CREATIVE</postback>
+        </button>
+        <button>
+            <text>Organized</text>
+            <postback>ORGANIZED</postback>
+        </button>
+        <button>
+            <text>Ethical</text>
+            <postback>ETHICAL</postback>
+        </button>
+        </template>
+    </category>
+  
+    <category>
+        <pattern>PROBLEM SOLVING</pattern>
+        <template>You should look into software development.
+        <link>
+            <text>Click here to learn more about software development.</text>
+            <url>https://money.usnews.com/careers/best-jobs/software-developer</url>
+        </link>
+        </template>
+    </category>
+
+    <category>
+        <pattern>STATISTICS</pattern>
+        <template>Data science would be a great fit for you.
+        <link>
+            <text>Click here to learn more about data science.</text>
+            <url>https://money.usnews.com/careers/best-jobs/data-scientist</url>
+        </link>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CREATIVE</pattern>
+        <template>You would be a great web developer.
+        <link>
+            <text>Click here to learn more about web development.</text>
+            <url>https://money.usnews.com/careers/best-jobs/web-developer</url>
+        </link>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ORGANIZED</pattern>
+        <template>You would make an excellent database administrator.
+        <link>
+            <text>Click here to learn more about database administration.</text>
+            <url>https://money.usnews.com/careers/best-jobs/database-administrator</url>
+        </link>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ETHICAL</pattern>
+        <template>You should go into information security.
+        <link>
+            <text>Click here to learn more about information security.</text>
+            <url>https://money.usnews.com/careers/best-jobs/information-security-analyst#</url>
+        </link>
+        </template>
+    </category>
+   
+</aiml>
+
